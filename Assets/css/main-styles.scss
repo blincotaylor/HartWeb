@@ -1,0 +1,199 @@
+/* 
+* MAIN RESET
+*/
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding*/
+body,
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 
+? CUSTOM PROPERTIES
+*/
+
+:root {
+  --logo-colour: #f3df9c;
+}
+
+/* 
+* MAIN STYLES
+*/
+
+html {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex
+}
+
+header {
+  height: 12svh;
+  padding-inline: 1rem;
+  margin-bottom: -.1rem;
+  background-color: #333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--logo-colour);
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.logo-img {
+  margin-left: -2rem;
+  width: 7.5rem;
+}
+
+.logo-text {
+  margin-left: -.5rem;
+}
+
+button {
+  background: transparent;
+  border-radius: .5rem;
+  border: none;
+}
+
+.hero {
+  background-color: #fafafa;
+  font-family: 'Roboto', sans-serif;
+  
+
+  
+}
+
+.container {
+  width:85vw;
+  margin-inline: auto;
+}
+
+.hero-main {
+  padding-top: 10rem;
+  height: 89svh;
+  // color: #f1f1f1;
+  color: var(--logo-colour);
+
+  background: 
+   linear-gradient(to top, rgba(87, 87, 87, 0.219) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.534) 100%),
+   url('../images/car\ driving\ background.avif') no-repeat;
+   background-size: cover;
+   filter: grayscale(70%);
+
+  &__title {
+  margin: .25rem 0;
+  font-size: 3rem;
+}
+
+&__text {
+  margin: .5rem 0;
+  font-size: 1.3rem;
+}
+}
+
+.hero-container {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-sub {
+  height:100svh;
+  padding: 1.5rem 0;
+  flex-direction: column;
+  gap: .5rem;
+
+  &__title {
+    margin: .5rem 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+
+    text-decoration: underline overline var(--logo-colour) 5px;
+  }
+
+  &__text{ 
+    margin: .5rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HartWeb</title>
+    <link rel="shortcut icon" href="Assets/Logo/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="Assets/css/main-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+    <title>Hart Web</title>
 </head>
 <body>
-    <h1>Example Text</h1>
+    <header class="flex">
+        <div class="logo flex">
+            <img src="Assets/Logo/logo-1024x1024.png" alt="" class="logo-img">
+            <p class="logo-text">HART WEB</p>
+        </div>
+        <div class="navigation">
+            <button class="hamburger" aria-controls="mobile navigation" aria-expanded="false">
+                <svg class="hamburger__svg" fill="var(--logo-colour)" viewBox="0 0 100 100" width="50">
+                    <rect class="bar top-bar" width="80" height="10" x="10" y="25" rx="5">
+                    </rect>
+                    <rect class="bar middle-bar" width="80" height="10" x="10" y="50" rx="5">
+                    </rect>
+                    <rect class="bar bottom-bar" width="80" height="10" x="10" y="75" rx="5">
+                    </rect>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-main">
+                <div class="container flex hero-container">
+                    <h1 class="hero-main__title">Welcome to Hart Web</h1>
+                    <p class="hero-main__text">Here at Hart Web we don't just build websites; we craft digital experiences that leave a lasting impression. Step into the future of web development with a team that's passionate about turning your visions into pixel-perfect reality. Here's why we stand out in the crowded digital landscape:</p>
+                </div>
+            </div>
+            <div class="container flex hero-sub">
+                <div>
+                    <p class="hero-sub__title">Innovative Solutions, Tailored for You:</p>
+                    <p class="hero-sub__text">Your brand is unique, and your website should reflect that. Our team of seasoned developers takes the time to understand your business, goals, and target audience, ensuring we deliver a bespoke solution that sets you apart.</p>
+                </div>
+                <div>
+                    <p class="hero-sub__title">Collaboration at the Core:</p>
+                    <p class="hero-sub__text">Your ideas, our expertise – it's a partnership that fuels success. We believe in transparent communication and collaboration throughout the development process. From concept to completion, your vision is our guiding star.</p>
+                </div>
+                <div>
+                    <p class="hero-sub__title">Responsive Design for Every Device:</p>
+                    <p class="hero-sub__text">In a world where users access websites from a myriad of devices, we ensure your site looks and functions flawlessly on desktops, tablets, and smartphones. Your audience deserves an immersive experience, no matter how they choose to connect.</p>
+                </div>
+                <div>
+                    <p class="hero-sub__title">Results-Driven Approach:</p>
+                    <p class="hero-sub__text">Your success is our success. We are committed to delivering tangible results, whether it's increased engagement, higher conversion rates, or improved user satisfaction. Our focus is not just on building websites but on building your digital success story.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
